@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        git(url: 'https://github.com/pokerov/RESTful-Application-Consumer.git', branch: 'master', changelog: true, poll: true)
+        git(url: 'https://github.com/pokerov/RESTful-Application-Consumer.git', branch: 'master', changelog: true)
       }
     }
     stage('s2') {
